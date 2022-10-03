@@ -1,12 +1,17 @@
 html {
   font-size: calc(60% + 0.8vmin);
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 * {

@@ -65,13 +65,13 @@
   color: $dark-orange;
 }
 
-@mixin Subtitle() {
+@mixin Subtitle($color) {
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.5rem;
   letter-spacing: 1px;
-  color: $dark-orange;
+  color: $color;
 }
 
 // BODY
@@ -80,4 +80,19 @@
   line-height: 1.5rem;
   font-weight: 500;
   color: $color;
+}
+
+// NAV
+@mixin Navbar($border) {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  border-bottom: $border;
+  padding: 1.5rem 0;
+  width: 80%;
+  max-width: 70rem;
+  margin: 0 auto;
+  height: max-content;
 }

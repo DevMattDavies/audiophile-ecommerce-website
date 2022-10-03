@@ -1,3 +1,8 @@
+// Breakpoints
+// Mobile <= 480
+// Tablet > 480 && < 1008
+// Desktop >= 1008
+
 // Colours
 $black: #000000;
 $off-black: #101010;
@@ -7,11 +12,10 @@ $lightgrey: #FAFAFA;
 $dark-orange: #D87D4A;
 $light-orange: #FBAF85;
 
-// Fonts
-$header-font: 'Manrope', sans-serif;
-$body-font: "dm_sansregular", sans-serif;
-$header-size: 40px;
 
 // Layout
-$nav-height: 72px;
-$arrow-gap: 20px;
+$nav-height: 93px;
+$width-desktop-header: 80%;
+$padding-desktop-body: 4rem;
+$padding-tablet-body: 2rem;
+$padding-mobile-body: 1rem;
