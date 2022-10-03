@@ -1,0 +1,12 @@
+.modal {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 5%;
+  margin-top: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/*# sourceMappingURL=NavModal.module.css.map */

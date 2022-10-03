@@ -1,0 +1,42 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.nav {
+  @include Navbar(0.5px solid grey);
+
+  &__hamburger {
+    width: 20px;
+    padding: 0;
+    color: white;
+  }
+
+  &__logo {
+    width: 143px;
+    height: 25px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    left: -50px;
+  }
+
+  &__link {
+    @include Subtitle($white);
+    font-weight: 500;
+
+    &:hover {
+      color: $dark-orange;
+    }
+  }
+
+  &__basket {
+    width: 23px;
+    height: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

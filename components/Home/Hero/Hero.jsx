@@ -10,9 +10,9 @@ export default function Hero() {
         className={styles.hero__image}
         src={
           width <= 480
-            ? "/assets/home/mobile/image-hero.jpg"
+            ? "/assets/home/mobile/image-header.jpg"
             : width > 480 && width < 1008
-            ? "/assets/home/tablet/image-hero.jpg"
+            ? "/assets/home/tablet/image-header.jpg"
             : "/assets/home/desktop/image-hero.jpg"
         }
       ></img>

@@ -7,10 +7,14 @@ export default function NavDesktop() {
   const width = useContext(WidthContext);
   return (
     <div className={styles.nav}>
-      <img
-        className={styles.nav__logo}
-        src="/assets/shared/desktop/logo.svg"
-      ></img>
+      <Link href="/">
+        <a>
+          <img
+            className={styles.nav__logo}
+            src="/assets/shared/desktop/logo.svg"
+          ></img>
+        </a>
+      </Link>
       <div className={styles.nav__links}>
         <Link href="/">
           <a className={styles.nav__link}>home</a>
@@ -25,7 +29,10 @@ export default function NavDesktop() {
           <a className={styles.nav__link}>earphones</a>
         </Link>
       </div>
-      <img className={styles.nav__basket} src='/assets/shared/desktop/icon-cart.svg'></img>
+      <img
+        className={styles.nav__basket}
+        src="/assets/shared/desktop/icon-cart.svg"
+      ></img>
     </div>
   );
 }
