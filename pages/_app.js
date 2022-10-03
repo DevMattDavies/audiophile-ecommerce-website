@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import { useState, useEffect, createContext } from "react";
 
 // Set correct viewport height for different devices
@@ -36,8 +36,8 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <WidthContext.Provider value={{ width }}>
-      <Component {...pageProps} width={width} />
+    <WidthContext.Provider value={ width }>
+      <Component {...pageProps}/>
     </WidthContext.Provider>
   );
 }

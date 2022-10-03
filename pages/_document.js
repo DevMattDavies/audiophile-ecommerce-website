@@ -30,49 +30,16 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* <link rel="preconnect" href="/fonts/" crossOrigin="anonymous" />
+          <link rel="preconnect" href="https://fonts.googleapis.com"></link>
           <link
-            rel="preload"
-            href="/fonts/dmsans-regular-webfont.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+          ></link>
           <link
-            rel="preload"
-            href="/fonts/dmsans-regular-webfont.woff"
-            as="font"
-            type="font/woff"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="/fonts/dmsans-regular-webfont.ttf"
-            as="font"
-            type="font/ttf"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="/fonts/dmsans-bold-webfont.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="/fonts/dmsans-bold-webfont.woff"
-            as="font"
-            type="font/woff"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="/fonts/dmsans-bold-webfont.ttf"
-            as="font"
-            type="font/ttf"
-            crossOrigin="anonymous"
-          /> */}
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"
+            rel="stylesheet"
+          ></link>
         </Head>
         <body>
           <Main />

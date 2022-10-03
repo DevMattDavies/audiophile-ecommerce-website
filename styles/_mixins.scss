@@ -1,0 +1,83 @@
+@import "./variables";
+
+// TITLES
+@mixin Header1Style($color) {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 3.6rem;
+  letter-spacing: 2px;
+  color: $color;
+}
+
+@mixin Header2Style($color) {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  letter-spacing: 1.5px;
+  color: $color;
+}
+
+@mixin Header3Style($color) {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.2rem;
+  letter-spacing: 1.15px;
+  color: $color;
+}
+
+@mixin Header4Style($color) {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.4rem;
+  letter-spacing: 2px;
+  color: $color;
+}
+
+@mixin Header5Style($color) {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2rem;
+  letter-spacing: 1.7px;
+  color: $color;
+}
+
+@mixin Header6Style($color) {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  letter-spacing: 1.3px;
+  color: $color;
+}
+
+// OVERLINE / SUBTITLE
+@mixin Overline() {
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2rem;
+  letter-spacing: 10px;
+  color: $dark-orange;
+}
+
+@mixin Subtitle() {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  color: $dark-orange;
+}
+
+// BODY
+@mixin Body($color) {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: $color;
+}

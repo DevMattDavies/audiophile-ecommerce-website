@@ -1,3 +1,5 @@
-export default function Home({width}) {
-    return 
+import HomePage from "../components/Home/Home.jsx";
+
+export default function Home() {
+  return <HomePage />;
 }

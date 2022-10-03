@@ -1,0 +1,18 @@
+.title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 3.6rem;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.title-alt {
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2rem;
+  letter-spacing: 10px;
+  color: #D87D4A;
+}
+/*# sourceMappingURL=Home.modules.css.map */
