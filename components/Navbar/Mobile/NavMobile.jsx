@@ -1,5 +1,5 @@
 import styles from "./NavMobile.module.scss";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { WidthContext } from "../../../pages/_app";
 import Link from "next/link";
 import NavModal from "../Modal/NavModal";
@@ -13,6 +13,17 @@ export default function NavMobile() {
   const menuToggleHandler = () => {
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   };
+
+
+ useEffect(() => {
+   if (isMenuOpen) {
+     document.documentElement.style.overflow = "hidden";
+     document.body.scroll = "no";
+   } else {
+     document.documentElement.style.overflow = "scroll";
+     document.body.scroll = "yes";
+   }
+ }, [isMenuOpen]);
 
   return (
     <>

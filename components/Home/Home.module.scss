@@ -1,10 +1,10 @@
 @import "../../styles/mixins";
 @import "../../styles/variables";
 
-.title {
-  @include Header1Style($black);
+.contentDesktop {
+  padding: 8rem $padding-desktop-body;
 }
 
-.title-alt {
-  @include Overline;
+.contentTablet {
+  padding: 8rem $padding-tablet-body;
 }

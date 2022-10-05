@@ -1,6 +1,9 @@
 import "../styles/globals.scss";
 import { useState, useEffect, createContext } from "react";
 
+import NavDesktop from "../components/Navbar/Desktop/NavDesktop";
+import NavMobile from "../components/Navbar/Mobile/NavMobile";
+
 // Set correct viewport height for different devices
 if (typeof window !== "undefined") {
   // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -36,8 +39,11 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <WidthContext.Provider value={ width }>
-      <Component {...pageProps}/>
+    <WidthContext.Provider value={width}>
+      {width < 1008 ? <NavMobile /> : <NavDesktop />}
+      <div id="main">
+        <Component {...pageProps} />
+      </div>
     </WidthContext.Provider>
   );
 }

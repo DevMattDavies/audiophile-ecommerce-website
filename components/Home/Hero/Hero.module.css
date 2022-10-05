@@ -3,10 +3,8 @@
 }
 
 .hero__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
+  width: 100vw;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 /*# sourceMappingURL=Hero.module.css.map */
